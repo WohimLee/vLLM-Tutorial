@@ -1,0 +1,1 @@
+vllm serve /home/buding/model/qwen2.5-7B-instruct

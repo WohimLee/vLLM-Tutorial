@@ -23,9 +23,9 @@
 
 ### 3 Triton 在 vLLM 的实现特点
 
-- 内存优化：针对 KV cache 的分块管理（block tables）使用 Triton 内核实现，以避免频繁的内存拷贝
-- 批处理友好：推理时多个请求合并执行，Triton 内核能够高效处理动态 batch 的注意力计算
-- 硬件自适应：Triton 编译器可以针对不同的 NVIDIA GPU 架构（如 A100, H100）自动生成优化后的 PTX
+- 内存优化：针对 KV cache 的分块管理（block tables）使用 `Triton` 内核实现，以避免频繁的内存拷贝
+- 批处理友好：推理时多个请求合并执行，`Triton` 内核能够高效处理动态 batch 的注意力计算
+- 硬件自适应：`Triton` 编译器可以针对不同的 `NVIDIA GPU` 架构（如 `A100`, `H100`）自动生成优化后的 `PTX`
 
 ### 4 总结
 
