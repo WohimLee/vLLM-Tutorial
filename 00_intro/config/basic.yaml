@@ -1,0 +1,9 @@
+# 指定模型路径（与命令行中 POSITIONAL model_tag 替代）
+model: "/home/azen/model/qwen2.5-7B-instruct"
+
+# 基础设置
+dtype: float16
+max_model_len: 32768          # 最大上下文长度
+gpu_memory_utilization: 0.95  # gpu 显存利用率
+tensor_parallel_size: 1
+pipeline_parallel_size: 1
