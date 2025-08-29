@@ -1,3 +1,16 @@
+## Offline Batched Inference
+
+#### 离线批量推理
+
+- 示例代码：使用 LLM 类与 SamplingParams 进行批量文本生成
+- 采样参数：设置温度（temperature）、核心采样概率（top_p）等
+- 模型加载：支持 OPT、LLaMA、Qwen 等模型
+
+
+>Example
+- Model: /home/azen/model/qwen2.5-7B-instruct
+- 环境: 2 x 2080 Ti
+```py
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright contributors to the vLLM project
 
@@ -16,7 +29,7 @@ sampling_params = SamplingParams(temperature=0.8, top_p=0.95)
 def main():
     # Create an LLM.
     llm = LLM(
-        model="/home/buding/model/qwen2.5-7B-instruct",# 放自己的目录
+        model="/home/azen/model/qwen2.5-7B-instruct",# 放自己的目录
         enable_chunked_prefill=False,   # key fix
         gpu_memory_utilization=0.98 # <— more VRAM for KV
     ) 
@@ -36,3 +49,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+```

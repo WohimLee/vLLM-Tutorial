@@ -1,8 +1,3 @@
-## Offline Batched Inference
->Example
-- Model: /home/buding/model/qwen2.5-7B-instruct
-- 环境: 2 x 2080 Ti
-```py
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-FileCopyrightText: Copyright contributors to the vLLM project
 
@@ -21,7 +16,7 @@ sampling_params = SamplingParams(temperature=0.8, top_p=0.95)
 def main():
     # Create an LLM.
     llm = LLM(
-        model="/home/buding/model/qwen2.5-7B-instruct",# 放自己的目录
+        model="/home/azen/model/qwen2.5-7B-instruct",# 放自己的目录
         enable_chunked_prefill=False,   # key fix
         gpu_memory_utilization=0.98 # <— more VRAM for KV
     ) 
@@ -41,4 +36,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-```
