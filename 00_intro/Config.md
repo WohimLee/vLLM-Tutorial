@@ -95,8 +95,12 @@ compilation_config:
 ### 2 使用 yaml 文件启动
 >`basic.yaml`
 ```yaml
+# config.yaml — vLLM 服务配置示例
+
 # 指定模型路径（与命令行中 POSITIONAL model_tag 替代）
 model: "/home/azen/model/qwen2.5-7B-instruct"
+host: 0.0.0.0
+port: 33333
 
 # 基础设置
 dtype: float16

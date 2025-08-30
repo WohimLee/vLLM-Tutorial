@@ -99,7 +99,7 @@ vllm serve /home/azen/model/qwen2.5-7B-instruct \
 - 接口风格：与 OpenAI 的 Chat Completions API 一致。
 #### 1 curl
 ```sh
-curl http://localhost:8000/v1/chat/completions \
+curl http://localhost:33333/v1/chat/completions \
   -H "Content-Type: application/json" \
   -d '{
     "model": "/home/azen/model/qwen2.5-7B-instruct",
