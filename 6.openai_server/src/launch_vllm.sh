@@ -17,6 +17,7 @@ python -m vllm.entrypoints.openai.api_server \
   --max-num-seqs 64 \
   --tensor-parallel-size 1
 
+# # LoRA SFT 微调后的模型
 # vllm serve /root/wohim/models/Qwen3-8B \
 #   --enable-lora \
 #   --lora-modules '{"name":"sft","path":"/root/wohim/LLaMA-Factory/saves/llama3-8b/lora/sft_r_16/checkpoint-411"}' \
