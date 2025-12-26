@@ -4,7 +4,9 @@ from openai import OpenAI
 
 # Modify OpenAI's API key and API base to use vLLM's API server.
 openai_api_key = "EMPTY"
-openai_api_base = "http://127.0.0.1:6666/v1"
+# openai_api_base = "http://connect.westd.seetacloud.com:6006/v1"
+openai_api_base = "https://u812838-8a87-f721890f.westd.seetacloud.com:8443/v1"
+
 
 messages = [
     {"role": "system", "content": "You are a helpful assistant."},
